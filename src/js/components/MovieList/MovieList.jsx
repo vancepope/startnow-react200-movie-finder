@@ -33,7 +33,7 @@ class MovieList extends Component {
                         <hr className='my-4' />
                         <Link
                           to={ `/movies/${movie.Title}` }
-                          className='btn btn-primary float-right'
+                          className='btn btn-primary float-right movieDetailButtons'
                           type='button'
                           value={ movie.Title }
                           onClick={ () => this.handleLink(movie.Title) }

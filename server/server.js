@@ -15,6 +15,7 @@ app.get('/movies/:str', (req,res) => {
   axios
     .get(url)
     .then((response) => {
+      console.log(response.data);
       res.send(response.data); })
     .catch(err => console.log(err));
 });

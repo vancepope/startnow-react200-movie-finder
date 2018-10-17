@@ -23,11 +23,12 @@ class MovieSearch extends Component {
     const { input } = this.props;
     return (
       <div>
-        <h1>Movie Finder</h1>
+        <h1 id='appTitle'>Movie Finder</h1>
         <div className='row'>
           <div className='col-12 col-md-12 mb-4'>
             <div className='input-group'>
               <input
+                id='movieInput'
                 placeholder='Enter a movie name'
                 type='text'
                 className='form-control'
@@ -35,7 +36,7 @@ class MovieSearch extends Component {
                 value={ input }
               />
               <span className='input-group-btn'>
-                <button className='btn btn-primary' type='button' onClick={ this.handleClick }>Go!</button>
+                <button id='movieButton' className='btn btn-primary' type='button' onClick={ this.handleClick }>Go!</button>
               </span>
             </div>
           </div>
